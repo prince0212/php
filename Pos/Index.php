@@ -48,9 +48,15 @@ $inventory['B'] = array('unit_price' => '12.00', 'volume_price' => null, 'volume
 $inventory['C'] = array('unit_price' => '1.25', 'volume_price' => '6.00', 'volume_qty' => 6);
 $inventory['D'] = array('unit_price' => '0.15', 'volume_price' => null, 'volume_qty' => null);
 $termianl->setPricing($inventory);
+
+// input ABCDABAA
 $result = $termianl->scan('ABCDABAA');
 echo "\n Input : ABCDABAA \n Output : ".$result;
+
+// input CCCCCCC
 $result = $termianl->scan('CCCCCCC');
 echo "\n Input : CCCCCCC \n Output : ".$result;
+
+// input ABCD
 $result = $termianl->scan('ABCD');
 echo "\n Input : ABCD \n Output : ".$result;

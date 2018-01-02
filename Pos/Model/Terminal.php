@@ -25,11 +25,16 @@ class Terminal
 	 */
 	private $data;
 
+	/**
+	 * construct
+	 * create an object for required class
+	 */
 	public function __construct()
 	{
 		$this->product = new Product();
 		$this->validate = new Validate();
 	}
+
 	/**
 	 * @var array
 	 */
